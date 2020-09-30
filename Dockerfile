@@ -1,12 +1,6 @@
-FROM "node:alpine"
-
-WORKDIR /code
-
-COPY package.json .
+FROM alpine
 
 RUN npm install
-
-COPY . .
 
 CMD ["npm", "start"]
 
